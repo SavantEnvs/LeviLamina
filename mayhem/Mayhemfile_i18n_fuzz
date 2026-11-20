@@ -1,0 +1,11 @@
+project: savantenvs/LeviLamina
+target: i18n_fuzz
+
+cmds:
+  - cmd: /mayhem/mayhem/out/i18n_fuzz
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/i18n_fuzz/testsuite

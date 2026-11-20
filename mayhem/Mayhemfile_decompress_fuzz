@@ -1,0 +1,11 @@
+project: savantenvs/LeviLamina
+target: decompress_fuzz
+
+cmds:
+  - cmd: /mayhem/mayhem/out/decompress_fuzz
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/decompress_fuzz/testsuite

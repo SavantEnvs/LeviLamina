@@ -1,0 +1,8 @@
+{
+  // a mod config
+  "version": 2, "ver": "1.2.3-rc.1", "structure": {"hello": 1, "trs": 0.5, "name": "n"},
+  "someFlag": true, "str": "s", "small": 255, "shortv": -32768, "dbl": 1e308, "mode": "Eager",
+  "amap": {"k": {"typo": "t", "I_am_a_number": 9007199254740993}}, "imap": {"5": "five"},
+  "tuple": [1, true, 2.5], "pair": ["p", {"typo": "q"}], "array": [1, 2, 3, 4, 5],
+  "vec": [1, 2], "ovec": null, "oinner": {"hello": 3}, "sset": ["z"], "nested": [[{"typo": "a"}]]
+}

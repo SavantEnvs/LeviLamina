@@ -1,0 +1,11 @@
+[
+  // comments are allowed, like ModRegistrar::loadManifest
+  {"name": "A", "entry": "a.dll", "type": "native", "version": "1.5.0",
+   "dependencies": [{"name": "B", "version": "^1.0.0"}],
+   "optionalDependencies": [{"name": "C"}],
+   "loadBefore": [{"name": "D"}], "conflicts": [{"name": "E", "version": "<1.0.0"}]},
+  {"name": "B", "entry": "b.dll", "type": "native", "version": "1.2.3-beta+x", "platform": "server"},
+  {"name": "C", "entry": "c.dll", "type": "script", "version": "2.0.0", "dependencies": [{"name": "A"}]},
+  {"name": "D", "entry": "d.dll", "type": "native", "version": "0.1.0", "passive": true},
+  {"name": "E", "entry": "e.dll", "type": "native", "version": "0.9.9", "extraInfo": {"author": "x"}}
+]
